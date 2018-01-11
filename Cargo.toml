@@ -1,0 +1,23 @@
+[package]
+name = "config"
+version = "0.1.0"
+description = "Customized Config library from Ryan Leckey's Config-RS library"
+readme = "README.md"
+authors = ["Michael Micucci <michael.micucci@exchange.co.jp> (Original author: Ryan Leckey <leckey.ryan@gmail.com>)"]
+license = "MIT/Apache-2.0"
+
+[features]
+default = ["toml", "yaml"]
+yaml = ["yaml-rust"]
+
+[dependencies]
+lazy_static = "0.2"
+serde = "1"
+nom = "^3.0.0"
+
+toml = { version = "0.4", optional = true }
+yaml-rust = { version = "0.3", optional = true }
+
+[dev-dependencies]
+serde_derive = "1"
+float-cmp = "0.2.3"

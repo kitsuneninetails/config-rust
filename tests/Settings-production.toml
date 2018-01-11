@@ -1,0 +1,9 @@
+debug = false
+production = true
+
+[place]
+rating = 4.9
+
+[[place.creators]]
+name = "Somebody New"
+id = "89012"
